@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".lifecycle.LocationActivity" />
+        <activity android:name=".navigation.GuideActivity" />
+        <activity android:name=".kotlin.KotlinTestActivity" />
     </application>
 
 </manifest>
