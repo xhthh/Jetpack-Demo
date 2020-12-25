@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.xht.jetpack.R
@@ -37,6 +36,10 @@ class SecondFragment : Fragment() {
 
         btnToThird.setOnClickListener {
             findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+        }
+
+        btnBackToHome.setOnClickListener {
+            findNavController().navigate(R.id.action_to_main)
         }
     }
 }

@@ -24,8 +24,12 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //返回首页FirstFragment，<action/> 中使用 popUpTo
-        btnBackToHOme.setOnClickListener {
+        btnBackToFirst.setOnClickListener {
             findNavController().navigate(R.id.thirdFragment_exit)
+        }
+
+        btnBackToHome.setOnClickListener {
+            findNavController().navigate(R.id.action_to_main)
         }
     }
 }
