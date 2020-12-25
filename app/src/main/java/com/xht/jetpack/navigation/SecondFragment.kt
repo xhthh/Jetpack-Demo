@@ -34,5 +34,9 @@ class SecondFragment : Fragment() {
         btnBack.setOnClickListener {
             findNavController().navigateUp()
         }
+
+        btnToThird.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+        }
     }
 }
