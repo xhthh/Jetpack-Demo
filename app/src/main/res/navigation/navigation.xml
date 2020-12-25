@@ -26,6 +26,8 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
 
@@ -37,5 +39,9 @@
         android:id="@+id/thirdFragment"
         android:name="com.xht.jetpack.navigation.ThirdFragment"
         android:label="ThirdFragment"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/thirdFragment_exit"
+            app:popUpTo="@id/firstFragment" />
+    </fragment>
 </navigation>
