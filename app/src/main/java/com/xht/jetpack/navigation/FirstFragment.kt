@@ -48,9 +48,18 @@ class FirstFragment : Fragment() {
             //findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
 
             //传参
-            val bundle = Bundle()
-            bundle.putString("title", "我是第二个Fragment")
-            findNavController().navigate(R.id.action_firstFragment_to_secondFragment, bundle)
+            //val bundle = Bundle()
+            //bundle.putString("title", "我是第二个Fragment")
+
+            //使用safeArgs插件
+            val navDirections =
+                FirstFragmentDirections.actionFirstFragmentToSecondFragment("我是第二个Fragment")
+
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment, navDirections.arguments)
+        }
+
+        findNavController().addOnDestinationChangedListener { controller, destination, arguments ->
+            println("FirstFragment---addOnDestinationChangedListener")
         }
     }
 

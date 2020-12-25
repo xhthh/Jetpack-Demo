@@ -15,7 +15,9 @@ class SecondFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            title = it.getString("title")
+            //title = it.getString("title")
+
+            title = SecondFragmentArgs.fromBundle(it).title
         }
     }
 
