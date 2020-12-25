@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.xht.jetpack.kotlin.KotlinTestActivity
 import com.xht.jetpack.lifecycle.LocationActivity
+import com.xht.jetpack.navigation.GuideActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnNavigation.setOnClickListener {
-
+            skip2Activity(GuideActivity::class.java)
         }
     }
 
