@@ -3,6 +3,7 @@ package com.xht.jetpack
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.xht.jetpack.databinding.DataBindingActivity
 import com.xht.jetpack.kotlin.KotlinTestActivity
 import com.xht.jetpack.lifecycle.LocationActivity
 import com.xht.jetpack.navigation.GuideActivity
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         btnNavigation.setOnClickListener {
             skip2Activity(GuideActivity::class.java)
+        }
+
+        btnDataBinding.setOnClickListener {
+            skip2Activity(DataBindingActivity::class.java)
         }
     }
 
