@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.xht.jetpack.databinding.ui.DataBindingActivity
 import com.xht.jetpack.kotlin.KotlinTestActivity
 import com.xht.jetpack.lifecycle.LocationActivity
+import com.xht.jetpack.livedata.LiveDataActivity
 import com.xht.jetpack.navigation.GuideActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,6 +34,10 @@ class MainActivity : AppCompatActivity() {
 
         btnDataBinding.setOnClickListener {
             skip2Activity(DataBindingActivity::class.java)
+        }
+
+        btnLiveData.setOnClickListener {
+            skip2Activity(LiveDataActivity::class.java)
         }
     }
 

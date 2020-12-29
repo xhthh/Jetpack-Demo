@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackDemo">
+        <activity android:name=".livedata.LiveDataActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTask">
