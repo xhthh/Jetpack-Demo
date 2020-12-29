@@ -3,7 +3,7 @@ package com.xht.jetpack
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.xht.jetpack.databinding.DataBindingActivity
+import com.xht.jetpack.databinding.ui.DataBindingActivity
 import com.xht.jetpack.kotlin.KotlinTestActivity
 import com.xht.jetpack.lifecycle.LocationActivity
 import com.xht.jetpack.navigation.GuideActivity

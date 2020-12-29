@@ -74,8 +74,6 @@
             android:contentDescription="@string/profile_avatar_cd"
             android:minWidth="48dp"
             android:minHeight="48dp"
-            app:tint="@{user.likes &gt; 9 ? @color/star : @android:color/black}"
-            app:srcCompat="@{user.likes &lt; 4 ? R.drawable.ic_person_black_96dp : R.drawable.ic_whatshot_black_96dp }"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

@@ -24,8 +24,9 @@
         <activity android:name=".lifecycle.LocationActivity" />
         <activity android:name=".navigation.GuideActivity" />
         <activity android:name=".kotlin.KotlinTestActivity" />
-        <activity android:name=".databinding.DataBindingActivity" />
-        <activity android:name=".databinding.ObservableFieldActivity" />
+        <activity android:name=".databinding.ui.DataBindingActivity" />
+        <activity android:name=".databinding.ui.ObservableFieldActivity" />
+        <activity android:name=".databinding.ui.ViewModelActivity" />
     </application>
 
 </manifest>
