@@ -9,5 +9,9 @@ class NameViewModel : ViewModel() {
         MutableLiveData<String>()
     }
 
+    init {
+        currentName.value = "xxx"
+    }
+
 
 }
